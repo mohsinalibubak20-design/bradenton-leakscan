@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { services, site } from "@/lib/site";
 import { locations } from "@/lib/locations";
@@ -19,14 +20,15 @@ export function Footer() {
     <footer className="mt-auto border-t border-slate-800 bg-slate-900 text-slate-300">
       <Container className="grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-1">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-sky-700 text-lg text-white">
-              💧
-            </span>
-            <span className="text-base font-extrabold text-white">
-              Bradenton Leak Scan
-            </span>
-          </div>
+          <Link href="/" aria-label={`${site.name} — Home`} className="inline-block">
+            <Image
+              src="/Logo.png"
+              alt="Bradenton LeakScan Logo"
+              width={2720}
+              height={880}
+              className="h-11 w-auto"
+            />
+          </Link>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">
             Non-invasive leak detection in Bradenton, FL and across Manatee
             County — slab, water line, pool, and sewer leaks pinpointed without

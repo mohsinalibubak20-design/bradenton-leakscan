@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { mainNav, site } from "@/lib/site";
 
@@ -38,6 +39,17 @@ export function MobileNav() {
 
       {open && (
         <div className="absolute inset-x-0 top-full border-b border-sky-100 bg-white shadow-lg">
+          <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
+            <Link href="/" onClick={() => setOpen(false)} aria-label={`${site.name} — Home`}>
+              <Image
+                src="/Logo.png"
+                alt="Bradenton LeakScan Logo"
+                width={2720}
+                height={880}
+                className="h-9 w-auto"
+              />
+            </Link>
+          </div>
           <nav className="flex flex-col px-5 py-4">
             {mainNav.map((item) => (
               <Link

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { MobileNav } from "@/components/MobileNav";
 import { mainNav, site } from "@/lib/site";
@@ -30,18 +31,15 @@ export function Header() {
       {/* Main nav */}
       <div className="border-b border-sky-100 bg-white/95 backdrop-blur">
         <Container className="relative flex h-16 items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-sky-700 text-lg text-white shadow-sm">
-              💧
-            </span>
-            <span className="flex flex-col leading-tight">
-              <span className="text-base font-extrabold tracking-tight text-slate-900">
-                Bradenton Leak Scan
-              </span>
-              <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-sky-600">
-                Leak Detection Specialists
-              </span>
-            </span>
+          <Link href="/" className="flex items-center" aria-label={`${site.name} — Home`}>
+            <Image
+              src="/Logo.png"
+              alt="Bradenton LeakScan Logo"
+              width={2720}
+              height={880}
+              priority
+              className="h-9 w-auto sm:h-11"
+            />
           </Link>
 
           <nav className="hidden items-center gap-0.5 lg:flex">
