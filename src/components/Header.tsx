@@ -34,10 +34,10 @@ export function Header() {
         <Container className="relative flex h-20 items-center justify-between gap-4 sm:h-24">
           <Link href="/" className="flex items-center" aria-label={`${site.name} — Home`}>
             <Image
-              src="/Logo.png"
+              src="/logo.png"
               alt="Bradenton LeakScan Logo"
-              width={2720}
-              height={880}
+              width={2172}
+              height={724}
               priority
               className="h-12 w-auto sm:h-16"
             />

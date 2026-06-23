@@ -43,10 +43,10 @@ export function MobileNav() {
           <div className="flex items-center justify-between border-b border-slate-100 px-5 py-4">
             <Link href="/" onClick={() => setOpen(false)} aria-label={`${site.name} — Home`}>
               <Image
-                src="/Logo.png"
+                src="/logo.png"
                 alt="Bradenton LeakScan Logo"
-                width={2720}
-                height={880}
+                width={2172}
+                height={724}
                 className="h-12 w-auto"
               />
             </Link>

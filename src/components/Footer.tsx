@@ -23,10 +23,10 @@ export function Footer() {
         <div className="lg:col-span-1">
           <Link href="/" aria-label={`${site.name} — Home`} className="inline-block">
             <Image
-              src="/Logo.png"
+              src="/logo.png"
               alt="Bradenton LeakScan Logo"
-              width={2720}
-              height={880}
+              width={2172}
+              height={724}
               className="h-12 w-auto sm:h-14"
             />
           </Link>
