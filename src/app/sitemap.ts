@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
 import { locations } from "@/lib/locations";
 import { posts } from "@/lib/blog";
 import { SITE_URL } from "@/lib/schema";
@@ -20,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const dynamicRoutes = [
+    ...landingServices.map((s) => ({ path: `/${s.slug}`, priority: 0.9 })),
     ...services.map((s) => ({ path: `/services/${s.slug}`, priority: 0.8 })),
     ...locations.map((l) => ({ path: `/locations/${l.slug}`, priority: 0.8 })),
     ...posts.map((p) => ({ path: `/blog/${p.slug}`, priority: 0.6 })),

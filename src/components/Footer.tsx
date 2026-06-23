@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import { services, site } from "@/lib/site";
+import { site } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
 import { locations } from "@/lib/locations";
 
 const resourceLinks = [
@@ -44,13 +45,13 @@ export function Footer() {
             Services
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm">
-            {services.map((s) => (
+            {landingServices.map((s) => (
               <li key={s.slug}>
                 <Link
-                  href={`/services/${s.slug}`}
+                  href={`/${s.slug}`}
                   className="text-slate-400 transition-colors hover:text-sky-400"
                 >
-                  {s.title} in Bradenton
+                  {s.navLabel}
                 </Link>
               </li>
             ))}

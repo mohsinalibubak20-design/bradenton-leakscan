@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { mainNav, site } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -51,16 +52,41 @@ export function MobileNav() {
             </Link>
           </div>
           <nav className="flex flex-col px-5 py-4">
-            {mainNav.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-700"
-              >
-                {item.label}
-              </Link>
-            ))}
+            {mainNav.map((item) =>
+              item.label === "Services" ? (
+                <div key={item.href}>
+                  <Link
+                    href="/services"
+                    onClick={() => setOpen(false)}
+                    className="rounded-lg px-3 py-3 text-base font-semibold text-slate-900 hover:bg-sky-50 hover:text-sky-700"
+                  >
+                    Services
+                  </Link>
+                  <div className="mb-1 ml-3 flex flex-col border-l border-slate-100 pl-3">
+                    {landingServices.map((s) => (
+                      <Link
+                        key={s.slug}
+                        href={`/${s.slug}`}
+                        onClick={() => setOpen(false)}
+                        className="flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-sky-50 hover:text-sky-700"
+                      >
+                        <span aria-hidden>{s.icon}</span>
+                        {s.navLabel}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-lg px-3 py-3 text-base font-medium text-slate-700 hover:bg-sky-50 hover:text-sky-700"
+                >
+                  {item.label}
+                </Link>
+              )
+            )}
             <a
               href={site.phoneHref}
               className="mt-3 inline-flex items-center justify-center rounded-lg bg-sky-600 px-4 py-3 text-base font-semibold text-white hover:bg-sky-700"

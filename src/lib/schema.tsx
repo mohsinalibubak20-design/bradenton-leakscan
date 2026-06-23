@@ -1,5 +1,6 @@
 import { site, services, serviceAreas, faqs, type Faq } from "@/lib/site";
 import { locations } from "@/lib/locations";
+import { landingServices } from "@/lib/landingServices";
 
 export const SITE_URL = "https://www.bradentonleakscan.com";
 
@@ -118,6 +119,22 @@ export function serviceSchema(slug: string) {
     serviceType: s.title,
     description: s.summary,
     url: `${SITE_URL}/services/${s.slug}`,
+    provider: { "@id": BUSINESS_ID, "@type": "PlumbingService", name: site.name },
+    areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
+  };
+}
+
+/** Service schema for a flat-URL landing service (e.g. /water-leak-detection-bradenton-fl). */
+export function landingServiceSchema(slug: string) {
+  const s = landingServices.find((x) => x.slug === slug);
+  if (!s) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: s.title,
+    serviceType: s.navLabel,
+    description: s.quickAnswer,
+    url: `${SITE_URL}/${s.slug}`,
     provider: { "@id": BUSINESS_ID, "@type": "PlumbingService", name: site.name },
     areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
   };

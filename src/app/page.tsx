@@ -8,7 +8,8 @@ import { DefinitionSection } from "@/components/DefinitionSection";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { SiteImage } from "@/components/SiteImage";
-import { faqs, services, serviceAreas, site } from "@/lib/site";
+import { faqs, serviceAreas, site } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
 import { getDefinition, getComparison } from "@/lib/geo";
 import { locations } from "@/lib/locations";
 
@@ -126,11 +127,17 @@ export default function Home() {
         <SectionHeading
           eyebrow="Our Services"
           title="Leak Detection Services in Bradenton, FL"
-          intro="One specialty, done right: finding water where it shouldn't be — slab, water line, pool, and sewer."
+          intro="One specialty, done right: finding water where it shouldn't be — slab, water line, pool, pipe, ceiling, wall, underground, hidden, commercial, and emergency leaks."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((s) => (
-            <ServiceCard key={s.slug} service={s} />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {landingServices.map((s) => (
+            <ServiceCard
+              key={s.slug}
+              href={`/${s.slug}`}
+              icon={s.icon}
+              title={s.navLabel}
+              description={s.short}
+            />
           ))}
         </div>
       </Section>
