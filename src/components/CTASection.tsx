@@ -42,7 +42,7 @@ export function CTASection({
           </Link>
         </div>
         <p className="text-xs font-medium text-sky-200">
-          Licensed &amp; Insured · {site.license} · Serving all of {site.county}
+          Serving all of {site.county}
         </p>
       </Container>
     </section>

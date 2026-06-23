@@ -88,10 +88,6 @@ export default function AboutPage() {
             </h3>
             <dl className="mt-4 space-y-4 text-sm">
               <div>
-                <dt className="font-medium text-slate-500">License</dt>
-                <dd className="text-slate-900">{site.license}</dd>
-              </div>
-              <div>
                 <dt className="font-medium text-slate-500">Service Area</dt>
                 <dd className="text-slate-900">
                   Bradenton &amp; Manatee County, FL

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
@@ -9,7 +10,9 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SiteImage } from "@/components/SiteImage";
 import { getLocation, locations } from "@/lib/locations";
-import { services, site } from "@/lib/site";
+import { site } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
+import { images } from "@/lib/images";
 import { JsonLd, locationServiceSchema } from "@/lib/schema";
 
 export function generateStaticParams() {
@@ -152,23 +155,36 @@ export default async function LocationPage({
                 Our Leak Detection Services in {loc.city}
               </h2>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                {services.map((s) => (
-                  <Link
-                    key={s.slug}
-                    href={`/services/${s.slug}`}
-                    className="group flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-sky-300 hover:bg-sky-50"
-                  >
-                    <span className="text-2xl">{s.icon}</span>
-                    <span>
-                      <span className="block font-bold text-slate-900 group-hover:text-sky-700">
-                        {s.title}
-                      </span>
-                      <span className="mt-1 block text-sm text-slate-600">
-                        {s.short}
-                      </span>
-                    </span>
-                  </Link>
-                ))}
+                {landingServices.map((s) => {
+                  const img = images[s.imageKey];
+                  return (
+                    <Link
+                      key={s.slug}
+                      href={`/${s.slug}`}
+                      className="group overflow-hidden rounded-xl border border-slate-200 bg-white transition-colors hover:border-sky-300 hover:bg-sky-50"
+                    >
+                      <Image
+                        src={img.src}
+                        alt={`${s.navLabel} in ${loc.city}, FL`}
+                        width={img.width}
+                        height={img.height}
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                        className="h-32 w-full object-cover"
+                      />
+                      <div className="flex items-start gap-3 p-5">
+                        <span className="text-2xl">{s.icon}</span>
+                        <span>
+                          <span className="block font-bold text-slate-900 group-hover:text-sky-700">
+                            {s.navLabel}
+                          </span>
+                          <span className="mt-1 block text-sm text-slate-600">
+                            {s.short}
+                          </span>
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 

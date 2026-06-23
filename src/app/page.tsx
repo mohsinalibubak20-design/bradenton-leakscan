@@ -17,7 +17,7 @@ const trustPoints = [
   { stat: "Same Day", label: "Appointments available" },
   { stat: "No Digging", label: "Non-invasive technology" },
   { stat: "Flat Rate", label: "Quoted before we start" },
-  { stat: "Licensed", label: site.license },
+  { stat: "10+ Years", label: `Serving ${site.county}` },
 ];
 
 const whyUs = [

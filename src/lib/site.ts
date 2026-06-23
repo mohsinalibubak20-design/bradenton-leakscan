@@ -55,7 +55,6 @@ export const mainNav: NavItem[] = [
   { label: "Pricing", href: "/pricing" },
   { label: "Insurance", href: "/insurance" },
   { label: "Guide", href: "/leak-detection-guide" },
-  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

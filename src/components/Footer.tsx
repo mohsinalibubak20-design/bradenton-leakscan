@@ -10,7 +10,6 @@ const resourceLinks = [
   { label: "Pricing", href: "/pricing" },
   { label: "Insurance Claims", href: "/insurance" },
   { label: "Emergency Service", href: "/emergency" },
-  { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -34,9 +33,6 @@ export function Footer() {
             Non-invasive leak detection in Bradenton, FL and across Manatee
             County — slab, water line, pool, and sewer leaks pinpointed without
             demolition.
-          </p>
-          <p className="mt-4 text-xs font-medium text-slate-500">
-            Licensed &amp; Insured · {site.license}
           </p>
         </div>
 
@@ -136,15 +132,6 @@ export function Footer() {
           </ul>
         </div>
       </Container>
-
-      <div className="border-t border-slate-800">
-        <Container className="flex flex-col items-center justify-between gap-2 py-6 text-xs text-slate-500 sm:flex-row">
-          <p>
-            © {new Date().getFullYear()} {site.name}. All rights reserved.
-          </p>
-          <p>Leak Detection Bradenton · Serving all of {site.county}, Florida</p>
-        </Container>
-      </div>
     </footer>
   );
 }

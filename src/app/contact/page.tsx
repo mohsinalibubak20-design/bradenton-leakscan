@@ -93,10 +93,6 @@ export default function ContactPage() {
                   ))}
                 </ul>
               </div>
-
-              <p className="text-xs text-slate-400">
-                Licensed &amp; Insured · {site.license}
-              </p>
             </div>
           </div>
         </Container>

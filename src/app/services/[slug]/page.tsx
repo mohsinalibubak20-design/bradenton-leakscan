@@ -9,6 +9,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { getService, services, site } from "@/lib/site";
+import { landingServices } from "@/lib/landingServices";
 import { locations } from "@/lib/locations";
 import { JsonLd, serviceSchema } from "@/lib/schema";
 
@@ -45,7 +46,7 @@ export default async function ServiceDetailPage({
   const service = getService(slug);
   if (!service) notFound();
 
-  const others = services.filter((s) => s.slug !== slug);
+  const others = landingServices;
   const serviceLd = serviceSchema(slug);
   const featuredLocations = locations.slice(0, 6);
 
@@ -293,11 +294,11 @@ export default async function ServiceDetailPage({
                   {others.map((o) => (
                     <li key={o.slug}>
                       <Link
-                        href={`/services/${o.slug}`}
+                        href={`/${o.slug}`}
                         className="flex items-center gap-2 text-sm font-medium text-slate-700 hover:text-sky-700"
                       >
                         <span aria-hidden>{o.icon}</span>
-                        {o.title}
+                        {o.navLabel}
                       </Link>
                     </li>
                   ))}

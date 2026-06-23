@@ -16,9 +16,6 @@ export function Header() {
             Same-Day &amp; Emergency Leak Detection in Bradenton
           </span>
           <span className="flex items-center gap-4">
-            <span className="hidden text-slate-400 md:inline">
-              Licensed &amp; Insured · {site.license}
-            </span>
             <Link
               href="/emergency"
               className="font-semibold text-amber-300 hover:text-amber-200"
