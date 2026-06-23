@@ -166,10 +166,10 @@ export default async function ServiceDetailPage({
             {/* CTA after signs */}
             <InlineCTA text="Seeing the warning signs above? Don't wait." />
 
-            {/* Inspection Process */}
+            {/* Inspection / repair process */}
             <div>
               <h2 className="text-2xl font-bold text-slate-900">
-                Our Inspection Process
+                {service.processHeading ?? "Our Inspection Process"}
               </h2>
               <ol className="mt-5 space-y-5">
                 {service.process.map((step, i) => (
@@ -186,10 +186,10 @@ export default async function ServiceDetailPage({
               </ol>
             </div>
 
-            {/* Detection Methods */}
+            {/* Detection / repair methods */}
             <div>
               <h2 className="text-2xl font-bold text-slate-900">
-                Detection Methods We Use
+                {service.methodsHeading ?? "Detection Methods We Use"}
               </h2>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
                 {service.detectionMethods.map((m) => (
@@ -212,7 +212,7 @@ export default async function ServiceDetailPage({
             {/* Why act quickly? */}
             <div>
               <h2 className="text-2xl font-bold text-slate-900">
-                Why Fast Detection Matters
+                {service.whyFastHeading ?? "Why Fast Detection Matters"}
               </h2>
               <p className="mt-4 text-base leading-relaxed text-slate-700">
                 {service.whyFast}
