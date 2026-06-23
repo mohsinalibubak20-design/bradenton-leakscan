@@ -46,7 +46,7 @@ export function MobileNav() {
                 alt="Bradenton LeakScan Logo"
                 width={2720}
                 height={880}
-                className="h-9 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
           </div>

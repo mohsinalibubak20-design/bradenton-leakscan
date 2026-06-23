@@ -26,7 +26,7 @@ export function Footer() {
               alt="Bradenton LeakScan Logo"
               width={2720}
               height={880}
-              className="h-11 w-auto"
+              className="h-12 w-auto sm:h-14"
             />
           </Link>
           <p className="mt-4 text-sm leading-relaxed text-slate-400">

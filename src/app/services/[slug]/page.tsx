@@ -255,7 +255,7 @@ export default async function ServiceDetailPage({
 
           {/* Sidebar */}
           <aside className="lg:col-span-1">
-            <div className="sticky top-28 space-y-6">
+            <div className="sticky top-36 space-y-6">
               <div className="rounded-2xl border border-sky-100 bg-sky-50 p-6">
                 <h2 className="text-lg font-bold text-slate-900">
                   Suspect a leak?

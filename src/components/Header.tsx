@@ -30,7 +30,7 @@ export function Header() {
 
       {/* Main nav */}
       <div className="border-b border-sky-100 bg-white/95 backdrop-blur">
-        <Container className="relative flex h-16 items-center justify-between gap-4">
+        <Container className="relative flex h-20 items-center justify-between gap-4 sm:h-24">
           <Link href="/" className="flex items-center" aria-label={`${site.name} — Home`}>
             <Image
               src="/Logo.png"
@@ -38,7 +38,7 @@ export function Header() {
               width={2720}
               height={880}
               priority
-              className="h-9 w-auto sm:h-11"
+              className="h-12 w-auto sm:h-16"
             />
           </Link>
 
