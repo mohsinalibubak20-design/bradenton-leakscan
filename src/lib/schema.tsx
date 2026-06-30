@@ -33,6 +33,7 @@ export function organizationSchema() {
     address: postalAddress,
     areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
     sameAs: [
+      site.social.facebook,
       site.social.youtube,
       site.social.instagram,
       site.social.pinterest,

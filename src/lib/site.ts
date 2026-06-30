@@ -24,6 +24,7 @@ export const site = {
   license: "FL CFC# 1428857",
   foundingYear: 2014,
   social: {
+    facebook: "https://www.facebook.com/BradentonLeakScan",
     youtube: "https://www.youtube.com/@BradentonLeakScan",
     instagram: "https://www.instagram.com/bradentonleakscan/",
     pinterest: "https://www.pinterest.com/bleakscan/",
