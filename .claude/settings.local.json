@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "PowerShell(npm run *)",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "PowerShell(cd \"C:\\\\Users\\\\FINE COMPUTER 62\\\\Desktop\\\\BradentonLeakScan\"; npx tsc --noEmit 2>&1 | Select-Object -First 30; \"EXIT: $LASTEXITCODE\")"
     ]
   }
 }
