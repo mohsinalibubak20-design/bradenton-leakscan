@@ -105,7 +105,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "water-leak-repair"],
-    imageKey: "undergroundPipe",
+    imageKey: "waterMoisture",
   },
   {
     slug: "slab-leak-detection-bradenton-fl",
@@ -176,7 +176,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["slab-leak-detection", "slab-leak-repair"],
-    imageKey: "waterStain",
+    imageKey: "slabAcoustic",
   },
   {
     slug: "emergency-leak-detection-bradenton-fl",
@@ -247,7 +247,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["slab-leak-detection", "water-line-leak-detection"],
-    imageKey: "serviceVehicle",
+    imageKey: "emergencyVan",
   },
   {
     slug: "hidden-leak-detection-bradenton-fl",
@@ -318,7 +318,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "slab-leak-detection"],
-    imageKey: "thermal",
+    imageKey: "hiddenThermal",
   },
   {
     slug: "underground-leak-detection-bradenton-fl",
@@ -389,7 +389,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "water-leak-repair"],
-    imageKey: "undergroundPipe",
+    imageKey: "undergroundLocator",
   },
   {
     slug: "pipe-leak-detection-bradenton-fl",
@@ -460,7 +460,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "water-leak-repair"],
-    imageKey: "technician",
+    imageKey: "pipeUnderSink",
   },
   {
     slug: "ceiling-leak-detection-bradenton-fl",
@@ -531,7 +531,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "slab-leak-detection"],
-    imageKey: "waterStain",
+    imageKey: "ceilingStain",
   },
   {
     slug: "wall-leak-detection-bradenton-fl",
@@ -602,7 +602,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "slab-leak-detection"],
-    imageKey: "moisture",
+    imageKey: "wallDrywall",
   },
   {
     slug: "pool-leak-detection-bradenton-fl",
@@ -673,7 +673,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["pool-leak-detection"],
-    imageKey: "poolTesting",
+    imageKey: "poolDyeTest",
   },
   {
     slug: "commercial-leak-detection-bradenton-fl",
@@ -744,7 +744,7 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "sewer-camera-inspection"],
-    imageKey: "commercial",
+    imageKey: "commercialMechanical",
   },
 ];
 

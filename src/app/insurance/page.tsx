@@ -96,7 +96,7 @@ export default function InsurancePage() {
                 📞 Call {site.phone}
               </a>
             </div>
-            <SiteImage name="waterStain" priority />
+            <SiteImage name="ceilingStain" priority />
           </div>
         </Container>
       </section>

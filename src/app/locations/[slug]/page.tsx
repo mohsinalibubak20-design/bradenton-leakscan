@@ -98,7 +98,7 @@ export default async function LocationPage({
                 </Link>
               </div>
             </div>
-            <SiteImage name="residential" priority />
+            <SiteImage name="locationVan" priority />
           </div>
         </Container>
       </section>

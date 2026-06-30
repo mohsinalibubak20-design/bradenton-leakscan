@@ -102,7 +102,7 @@ export const services: Service[] = [
     icon: "🏠",
     keyword: "slab leak detection Bradenton",
     image: {
-      src: "/images/water-stain-inspection.svg",
+      src: "/images/slab-leak-acoustic.webp",
       alt: "Technician performing slab leak detection on a Bradenton home foundation",
     },
     quickAnswer:
@@ -211,7 +211,7 @@ export const services: Service[] = [
     icon: "💧",
     keyword: "water leak detection Bradenton",
     image: {
-      src: "/images/underground-pipe-inspection.svg",
+      src: "/images/underground-locator-yard.webp",
       alt: "Underground water line leak detection equipment locating a buried pipe in Bradenton",
     },
     quickAnswer:
@@ -320,7 +320,7 @@ export const services: Service[] = [
     icon: "🏊",
     keyword: "pool leak detection Bradenton",
     image: {
-      src: "/images/pool-leak-testing.svg",
+      src: "/images/pool-leak-dye-test.webp",
       alt: "Pool leak detection dye testing at a Bradenton, FL backyard swimming pool",
     },
     quickAnswer:
@@ -429,7 +429,7 @@ export const services: Service[] = [
     icon: "📹",
     keyword: "sewer camera inspection Bradenton",
     image: {
-      src: "/images/commercial-inspection.svg",
+      src: "/images/sewer-camera-line.webp",
       alt: "HD sewer camera inspection of a drain line at a Bradenton property",
     },
     quickAnswer:
@@ -533,7 +533,7 @@ export const services: Service[] = [
     icon: "🛠️",
     keyword: "slab leak repair Bradenton",
     image: {
-      src: "/images/leak-detection-technician.svg",
+      src: "/images/slab-leak-acoustic.webp",
       alt: "Technician preparing a targeted slab leak repair in a Bradenton home",
     },
     processHeading: "How Slab Leak Repair Works",
@@ -650,7 +650,7 @@ export const services: Service[] = [
     icon: "🔧",
     keyword: "water leak repair Bradenton",
     image: {
-      src: "/images/service-vehicle.svg",
+      src: "/images/pipe-leak-under-sink.webp",
       alt: "Bradenton Leak Scan technician coordinating a targeted water leak repair",
     },
     processHeading: "How Water Leak Repair Works",

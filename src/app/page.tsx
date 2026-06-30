@@ -91,7 +91,7 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <SiteImage name="technician" priority />
+            <SiteImage name="heroThermal" priority />
             <div className="mt-4 grid grid-cols-2 gap-4">
               {trustPoints.map((t) => (
                 <div
@@ -146,7 +146,7 @@ export default function Home() {
       <Section className="bg-slate-50">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <DefinitionSection definition={whatIsLeakDetection} />
-          <SiteImage name="thermal" />
+          <SiteImage name="hiddenThermal" />
         </div>
         <div className="mt-8 text-center">
           <Link
@@ -184,7 +184,7 @@ export default function Home() {
       {/* Process + image */}
       <Section className="bg-slate-50">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <SiteImage name="moisture" />
+          <SiteImage name="waterMoisture" />
           <div>
             <SectionHeading
               align="left"
