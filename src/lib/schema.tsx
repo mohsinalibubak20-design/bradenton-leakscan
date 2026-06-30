@@ -32,7 +32,12 @@ export function organizationSchema() {
     foundingDate: String(site.foundingYear),
     address: postalAddress,
     areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
-    sameAs: [site.social.facebook, site.social.instagram, site.social.google],
+    sameAs: [
+      site.social.youtube,
+      site.social.instagram,
+      site.social.pinterest,
+      site.social.x,
+    ],
   };
 }
 

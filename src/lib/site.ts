@@ -4,8 +4,8 @@ export const site = {
   tagline: "Leak Detection in Bradenton, FL",
   description:
     "Bradenton Leak Scan provides non-invasive leak detection in Bradenton, FL and across Manatee County. We pinpoint slab leaks, water leaks, pool leaks, and underground pipe leaks using acoustic listening, thermal imaging, and pressure testing — no guesswork, no unnecessary digging.",
-  phone: "(941) 555-0142",
-  phoneHref: "tel:+19415550142",
+  phone: "+1 (970) 670-9614",
+  phoneHref: "tel:+19706709614",
   email: "service@bradentonleakscan.com",
   emailHref: "mailto:service@bradentonleakscan.com",
   address: {
@@ -24,9 +24,10 @@ export const site = {
   license: "FL CFC# 1428857",
   foundingYear: 2014,
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    google: "https://google.com",
+    youtube: "https://www.youtube.com/@BradentonLeakScan",
+    instagram: "https://www.instagram.com/bradentonleakscan/",
+    pinterest: "https://www.pinterest.com/bleakscan/",
+    x: "https://x.com/BradentonLeaks",
   },
 } as const;
 

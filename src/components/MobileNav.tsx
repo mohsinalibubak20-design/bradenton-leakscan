@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { SocialLinks } from "@/components/SocialLinks";
 import { mainNav, site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
 
@@ -93,6 +94,10 @@ export function MobileNav() {
             >
               Call {site.phone}
             </a>
+            <SocialLinks
+              className="mt-4 flex items-center justify-center gap-3"
+              linkClassName="inline-flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-colors hover:bg-sky-600 hover:text-white"
+            />
           </nav>
         </div>
       )}

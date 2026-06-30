@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
+import { SocialLinks } from "@/components/SocialLinks";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { site } from "@/lib/site";
 
@@ -67,6 +68,15 @@ export default function ContactPage() {
                 >
                   {site.email}
                 </a>
+                <div className="mt-5 border-t border-white/20 pt-4">
+                  <p className="text-xs font-semibold uppercase tracking-wider text-sky-100">
+                    Follow Us
+                  </p>
+                  <SocialLinks
+                    className="mt-3 flex items-center gap-3"
+                    linkClassName="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-white transition-colors hover:bg-white hover:text-sky-600"
+                  />
+                </div>
               </div>
 
               <div className="rounded-2xl border border-slate-200 p-6">

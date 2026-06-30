@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/Container";
+import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
 import { locations } from "@/lib/locations";
@@ -34,6 +35,7 @@ export function Footer() {
             County — slab, water line, pool, and sewer leaks pinpointed without
             demolition.
           </p>
+          <SocialLinks className="mt-5 flex items-center gap-3" />
         </div>
 
         <div>

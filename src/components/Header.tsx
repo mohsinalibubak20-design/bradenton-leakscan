@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import { MobileNav } from "@/components/MobileNav";
+import { SocialLinks } from "@/components/SocialLinks";
 import { mainNav, site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
 
@@ -16,6 +17,11 @@ export function Header() {
             Same-Day &amp; Emergency Leak Detection in Bradenton
           </span>
           <span className="flex items-center gap-4">
+            <SocialLinks
+              className="hidden items-center gap-2 sm:flex"
+              linkClassName="inline-flex h-6 w-6 items-center justify-center rounded-full text-slate-300 transition-colors hover:text-white"
+              iconClassName="h-3.5 w-3.5"
+            />
             <Link
               href="/emergency"
               className="font-semibold text-amber-300 hover:text-amber-200"
