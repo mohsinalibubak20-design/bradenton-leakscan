@@ -16,6 +16,24 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## How to deploy
+
+Deploy the site with a single command from the project root. The script stages
+all changes, commits them with the message `auto deploy update`, and pushes to
+the current branch. If there is nothing to commit it prints `Nothing to deploy`.
+
+**Mac/Linux:**
+
+```bash
+./deploy.sh
+```
+
+**Windows:**
+
+```bat
+deploy.bat
+```
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
