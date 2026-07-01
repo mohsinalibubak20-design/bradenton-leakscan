@@ -55,6 +55,12 @@ export const images = {
     width: 1200,
     height: 900,
   },
+  pipeWallInspection: {
+    src: "/images/pipe-leak-wall-inspection.webp",
+    alt: "Bradenton LeakScan technician inspecting hidden pipe leaks inside a wall in Bradenton Florida",
+    width: 1200,
+    height: 900,
+  },
   ceilingStain: {
     src: "/images/ceiling-leak-inspection.webp",
     alt: "Technician inspecting a ceiling water stain with a moisture meter and flashlight",

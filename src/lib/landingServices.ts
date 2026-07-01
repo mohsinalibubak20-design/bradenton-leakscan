@@ -468,7 +468,9 @@ export const landingServices: LandingService[] = [
       },
     ],
     relatedServices: ["water-line-leak-detection", "water-leak-repair"],
-    imageKey: "pipeUnderSink",
+    imageKey: "pipeWallInspection",
+    imageAlt:
+      "Bradenton LeakScan technician inspecting hidden pipe leaks inside a wall in Bradenton Florida",
   },
   {
     slug: "ceiling-leak-detection-bradenton-fl",
