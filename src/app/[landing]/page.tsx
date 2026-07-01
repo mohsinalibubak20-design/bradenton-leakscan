@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
@@ -7,7 +8,7 @@ import { CTASection, InlineCTA } from "@/components/CTASection";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { SiteImage } from "@/components/SiteImage";
+import { images } from "@/lib/images";
 import { getLandingService, landingServices } from "@/lib/landingServices";
 import { getService, site } from "@/lib/site";
 import { locations } from "@/lib/locations";
@@ -100,7 +101,15 @@ export default async function LandingServicePage({
                 </Link>
               </div>
             </div>
-            <SiteImage name={s.imageKey} priority />
+            <Image
+              src={images[s.imageKey].src}
+              alt={s.imageAlt ?? images[s.imageKey].alt}
+              width={images[s.imageKey].width}
+              height={images[s.imageKey].height}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
+              className="h-auto w-full rounded-2xl shadow-lg ring-1 ring-slate-200/70"
+            />
           </div>
         </Container>
       </section>

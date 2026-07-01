@@ -33,6 +33,8 @@ export type LandingService = {
   /** Cross-links to detailed /services/[slug] pages. */
   relatedServices: string[];
   imageKey: ImageKey;
+  /** Optional per-service hero alt text; falls back to the registry alt. */
+  imageAlt?: string;
 };
 
 export const landingServices: LandingService[] = [
@@ -177,6 +179,8 @@ export const landingServices: LandingService[] = [
     ],
     relatedServices: ["slab-leak-detection", "slab-leak-repair"],
     imageKey: "slabAcoustic",
+    imageAlt:
+      "Bradenton LeakScan technician using acoustic equipment for slab leak detection in Bradenton FL",
   },
   {
     slug: "emergency-leak-detection-bradenton-fl",
