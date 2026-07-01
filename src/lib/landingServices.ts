@@ -252,6 +252,8 @@ export const landingServices: LandingService[] = [
     ],
     relatedServices: ["slab-leak-detection", "water-line-leak-detection"],
     imageKey: "emergencyVan",
+    imageAlt:
+      "Bradenton LeakScan technician arriving for emergency leak detection in Bradenton FL",
   },
   {
     slug: "hidden-leak-detection-bradenton-fl",
