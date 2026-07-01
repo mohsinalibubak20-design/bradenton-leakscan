@@ -140,7 +140,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <Container className="relative grid items-center gap-12 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-24">
+      <Container className="relative grid items-center gap-8 py-10 sm:gap-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-24">
         {/* Copy column */}
         <div className="max-w-xl">
           <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-700 shadow-sm">
@@ -208,7 +208,7 @@ export function Hero() {
           </div>
 
           {/* Trust / feature row */}
-          <dl className="mt-9 grid grid-cols-2 gap-x-5 gap-y-5 border-t border-slate-200/80 pt-8 sm:grid-cols-4">
+          <dl className="mt-8 grid grid-cols-2 gap-x-5 gap-y-5 border-t border-slate-200/80 pt-7 sm:mt-9 sm:pt-8 sm:grid-cols-4">
             {features.map((f) => (
               <div key={f.title} className="flex flex-col gap-2">
                 <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-700 ring-1 ring-sky-200/70">
@@ -230,14 +230,14 @@ export function Hero() {
             className="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-sky-500/20 via-sky-300/10 to-transparent blur-2xl"
             aria-hidden
           />
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-slate-900/10 sm:aspect-[4/3] lg:aspect-[5/6]">
+          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-slate-900/10 lg:aspect-[4/5]">
             <Image
-              src="/images/hero-technician-thermal.webp"
-              alt="Bradenton LeakScan technician using a thermal imaging camera to find a hidden water leak inside a Florida home"
+              src="/images/hero-leak-detection.png"
+              alt="Bradenton LeakScan technician using a thermal imaging camera to find a hidden water leak inside a bright Florida home"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 48vw"
-              className="object-cover"
+              className="object-cover object-[62%_center]"
             />
             {/* Subtle bottom gradient for legibility of the floating badge */}
             <div
