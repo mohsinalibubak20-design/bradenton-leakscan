@@ -396,6 +396,8 @@ export const landingServices: LandingService[] = [
     ],
     relatedServices: ["water-line-leak-detection", "water-leak-repair"],
     imageKey: "undergroundLocator",
+    imageAlt:
+      "Bradenton LeakScan technician locating an underground water leak in a Bradenton yard",
   },
   {
     slug: "pipe-leak-detection-bradenton-fl",
