@@ -688,6 +688,8 @@ export const landingServices: LandingService[] = [
     ],
     relatedServices: ["pool-leak-detection"],
     imageKey: "poolDyeTest",
+    imageAlt:
+      "Bradenton LeakScan technician performing pool leak detection at a Bradenton backyard pool",
   },
   {
     slug: "commercial-leak-detection-bradenton-fl",
