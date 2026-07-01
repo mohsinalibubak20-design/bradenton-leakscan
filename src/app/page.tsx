@@ -9,7 +9,6 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { DefinitionSection } from "@/components/DefinitionSection";
 import { ComparisonTable } from "@/components/ComparisonTable";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { SiteImage } from "@/components/SiteImage";
 import { faqs, serviceAreas, site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
 import { getDefinition, getComparison } from "@/lib/geo";
@@ -127,7 +126,14 @@ export default function Home() {
       {/* Process + image */}
       <Section className="bg-slate-50">
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-          <SiteImage name="waterMoisture" />
+          <Image
+            src="/images/water-leak-moisture-meter.webp"
+            alt="Bradenton LeakScan technician using a moisture meter to pinpoint a wall leak"
+            width={1200}
+            height={900}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="h-auto w-full rounded-2xl shadow-lg ring-1 ring-slate-200/70"
+          />
           <div>
             <SectionHeading
               align="left"
