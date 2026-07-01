@@ -3,6 +3,7 @@ import { Container } from "@/components/Container";
 import { Section, SectionHeading } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
 import { CTASection } from "@/components/CTASection";
+import { Hero } from "@/components/Hero";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { DefinitionSection } from "@/components/DefinitionSection";
 import { ComparisonTable } from "@/components/ComparisonTable";
@@ -12,13 +13,6 @@ import { faqs, serviceAreas, site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
 import { getDefinition, getComparison } from "@/lib/geo";
 import { locations } from "@/lib/locations";
-
-const trustPoints = [
-  { stat: "Same Day", label: "Appointments available" },
-  { stat: "No Digging", label: "Non-invasive technology" },
-  { stat: "Flat Rate", label: "Quoted before we start" },
-  { stat: "10+ Years", label: `Serving ${site.county}` },
-];
 
 const whyUs = [
   {
@@ -50,66 +44,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 to-white">
-        <Container className="grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-sky-700">
-              Serving Bradenton &amp; {site.county}
-            </span>
-            <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-              Leak Detection in Bradenton, FL
-              <span className="block text-sky-600">
-                Find the Leak. Skip the Demolition.
-              </span>
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-              Bradenton Leak Scan provides fast, non-invasive{" "}
-              <strong>leak detection in Bradenton</strong> and across Manatee
-              County. We pinpoint slab leaks, water line leaks, pool leaks, and
-              underground leaks using acoustic listening, thermal imaging, and
-              pressure testing — so you fix the problem without tearing up your
-              home or yard.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={site.phoneHref}
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-sky-700"
-              >
-                <span aria-hidden>📞</span> Call {site.phone}
-              </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition-colors hover:border-sky-300 hover:text-sky-700"
-              >
-                Request a Free Quote
-              </Link>
-            </div>
-            <p className="mt-4 text-sm text-slate-500">
-              ⭐⭐⭐⭐⭐ Trusted by homeowners across the Suncoast · Same-day
-              service
-            </p>
-          </div>
-
-          <div className="relative">
-            <SiteImage name="heroThermal" priority />
-            <div className="mt-4 grid grid-cols-2 gap-4">
-              {trustPoints.map((t) => (
-                <div
-                  key={t.label}
-                  className="rounded-2xl bg-white p-4 text-center shadow-sm ring-1 ring-slate-100"
-                >
-                  <div className="text-lg font-extrabold text-sky-700">
-                    {t.stat}
-                  </div>
-                  <div className="mt-1 text-xs font-medium text-slate-600">
-                    {t.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Container>
-      </section>
+      <Hero />
 
       {/* Quick Answer (AEO) */}
       <Section className="py-12!" containerClassName="max-w-4xl">
