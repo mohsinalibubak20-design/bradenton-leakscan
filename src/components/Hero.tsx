@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Container } from "@/components/Container";
+import { LeadSmartForm } from "@/components/LeadSmartForm";
 import { site } from "@/lib/site";
 
 /* Inline, dependency-free icons (stroke = currentColor). No emojis. */
@@ -120,47 +120,52 @@ function StarIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
-const features = [
-  { icon: ClockIcon, title: "24/7 Emergency Service", sub: "Active leak? We respond fast." },
-  { icon: ScanIcon, title: "Advanced Detection Tech", sub: "Thermal, acoustic & pressure." },
-  { icon: BoltIcon, title: "Fast Local Response", sub: "Same-day appointments." },
-  { icon: MapPinIcon, title: "Bradenton & Manatee County", sub: "Serving the full Suncoast." },
+const highlights = [
+  { icon: ClockIcon, title: "24/7 Emergency Service" },
+  { icon: ScanIcon, title: "Advanced Detection Tech" },
+  { icon: BoltIcon, title: "Fast Local Response" },
+  { icon: MapPinIcon, title: `Serving ${site.county}` },
 ];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-white">
-      {/* Decorative background accents */}
-      <div
-        className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-sky-200/40 blur-3xl"
-        aria-hidden
+    <section className="relative isolate overflow-hidden">
+      {/* Full-bleed background photo */}
+      <Image
+        src="/images/hero-leak-detection.png"
+        alt="Bradenton LeakScan technician using a thermal imaging camera to find a hidden water leak inside a bright Florida home"
+        fill
+        priority
+        sizes="100vw"
+        className="-z-20 object-cover object-[60%_center]"
       />
+      {/* Readability overlay — keeps the photo visible while the copy stays legible */}
       <div
-        className="pointer-events-none absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-sky-100/60 blur-3xl"
+        className="absolute inset-0 -z-10 bg-gradient-to-b from-slate-950/85 via-slate-950/70 to-slate-950/75 lg:bg-gradient-to-r lg:from-slate-950/90 lg:via-slate-950/70 lg:to-slate-950/40"
         aria-hidden
       />
 
-      <Container className="relative grid items-center gap-8 py-10 sm:gap-10 sm:py-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-24">
+      <Container className="relative grid items-center gap-10 py-14 lg:grid-cols-2 lg:gap-14 lg:py-24">
         {/* Copy column */}
         <div className="max-w-xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-white px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-700 shadow-sm">
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-100 backdrop-blur">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-600" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-sky-400" />
             </span>
             Advanced Non-Invasive Leak Detection
           </span>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
             Find Hidden Leaks Fast.
-            <span className="mt-1 block text-sky-600">
+            <span className="mt-1 block text-sky-400">
               Prevent Costly Damage.
             </span>
           </h1>
 
-          <p className="mt-6 text-lg leading-relaxed text-slate-600">
+          <p className="mt-6 text-lg leading-relaxed text-slate-200">
             Bradenton LeakScan pinpoints{" "}
-            <strong className="font-semibold text-slate-800">
+            <strong className="font-semibold text-white">
               slab, pool, and underground leaks
             </strong>{" "}
             to the inch — using thermal imaging, acoustic listening, and pressure
@@ -172,22 +177,22 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href={site.phoneHref}
-              className="group inline-flex items-center justify-center gap-2.5 rounded-xl bg-sky-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-sky-600/25 transition-all hover:-translate-y-0.5 hover:bg-sky-700 hover:shadow-xl hover:shadow-sky-600/30"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-xl bg-sky-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-sky-900/40 transition-all hover:-translate-y-0.5 hover:bg-sky-400"
             >
               <PhoneIcon className="h-5 w-5 transition-transform group-hover:rotate-12" />
               Call Now
               <span className="hidden font-bold sm:inline">· {site.phone}</span>
             </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-7 py-4 text-base font-semibold text-slate-800 shadow-sm transition-all hover:-translate-y-0.5 hover:border-sky-400 hover:text-sky-700 hover:shadow-md"
+            <a
+              href="#quote-form"
+              className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/10 px-7 py-4 text-base font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/20"
             >
               Request a Free Quote
-            </Link>
+            </a>
           </div>
 
           {/* Rating / trust line */}
-          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-500">
+          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-300">
             <span className="flex items-center gap-0.5 text-amber-400">
               <StarIcon />
               <StarIcon />
@@ -195,70 +200,46 @@ export function Hero() {
               <StarIcon />
               <StarIcon />
             </span>
-            <span className="font-medium text-slate-700">
+            <span className="font-medium text-white">
               Trusted by Suncoast homeowners
             </span>
-            <span className="text-slate-300" aria-hidden>
+            <span className="text-white/30" aria-hidden>
               |
             </span>
             <span className="inline-flex items-center gap-1">
-              <ShieldCheckIcon className="h-4 w-4 text-sky-600" />
+              <ShieldCheckIcon className="h-4 w-4 text-sky-400" />
               Licensed &amp; Insured · {site.license}
             </span>
           </div>
 
-          {/* Trust / feature row */}
-          <dl className="mt-8 grid grid-cols-2 gap-x-5 gap-y-5 border-t border-slate-200/80 pt-7 sm:mt-9 sm:pt-8 sm:grid-cols-4">
-            {features.map((f) => (
-              <div key={f.title} className="flex flex-col gap-2">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-100 text-sky-700 ring-1 ring-sky-200/70">
-                  <f.icon className="h-5 w-5" />
+          {/* Trust / service highlights */}
+          <dl className="mt-8 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-white/15 pt-7">
+            {highlights.map((h) => (
+              <div key={h.title} className="flex items-center gap-3">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-sky-500/20 text-sky-300 ring-1 ring-inset ring-sky-400/30">
+                  <h.icon className="h-5 w-5" />
                 </span>
-                <dt className="text-sm font-bold leading-tight text-slate-900">
-                  {f.title}
+                <dt className="text-sm font-semibold leading-tight text-white">
+                  {h.title}
                 </dt>
-                <dd className="text-xs leading-snug text-slate-500">{f.sub}</dd>
               </div>
             ))}
           </dl>
         </div>
 
-        {/* Image column */}
-        <div className="relative lg:pl-4">
-          {/* Glow accent behind the image */}
-          <div
-            className="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-sky-500/20 via-sky-300/10 to-transparent blur-2xl"
-            aria-hidden
-          />
-          <div className="relative aspect-[16/10] w-full overflow-hidden rounded-[2rem] shadow-2xl ring-1 ring-slate-900/10 lg:aspect-[4/5]">
-            <Image
-              src="/images/hero-leak-detection.png"
-              alt="Bradenton LeakScan technician using a thermal imaging camera to find a hidden water leak inside a bright Florida home"
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 48vw"
-              className="object-cover object-[62%_center]"
-            />
-            {/* Subtle bottom gradient for legibility of the floating badge */}
-            <div
-              className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-slate-900/50 to-transparent"
-              aria-hidden
-            />
-          </div>
-
-          {/* Floating credibility badge */}
-          <div className="absolute -bottom-5 left-4 flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/95 px-5 py-3.5 shadow-xl backdrop-blur sm:left-6">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-600 text-white">
-              <ShieldCheckIcon className="h-6 w-6" />
-            </span>
-            <div className="leading-tight">
-              <div className="text-sm font-extrabold text-slate-900">
-                Pinpoint Accuracy
-              </div>
-              <div className="text-xs font-medium text-slate-500">
-                Located to the inch — no demolition
-              </div>
+        {/* LeadSmart form card */}
+        <div id="quote-form" className="w-full lg:justify-self-end lg:max-w-md">
+          <div className="rounded-2xl bg-white p-6 shadow-2xl ring-1 ring-slate-900/10 sm:p-7">
+            <div className="mb-5">
+              <p className="text-xl font-extrabold tracking-tight text-slate-900">
+                Request Your Free Quote
+              </p>
+              <p className="mt-1.5 text-sm text-slate-500">
+                Same-day response · No obligation · Flat-rate pricing quoted
+                before we start.
+              </p>
             </div>
+            <LeadSmartForm />
           </div>
         </div>
       </Container>
