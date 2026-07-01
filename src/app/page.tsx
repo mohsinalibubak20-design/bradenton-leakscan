@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Section, SectionHeading } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -81,7 +82,14 @@ export default function Home() {
       <Section className="bg-slate-50">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <DefinitionSection definition={whatIsLeakDetection} />
-          <SiteImage name="hiddenThermal" />
+          <Image
+            src="/images/hidden-leak-thermal-wall.webp"
+            alt="Bradenton LeakScan technician using thermal imaging to locate a hidden wall leak"
+            width={1200}
+            height={900}
+            sizes="(max-width: 1024px) 100vw, 50vw"
+            className="h-auto w-full rounded-2xl shadow-lg ring-1 ring-slate-200/70"
+          />
         </div>
         <div className="mt-8 text-center">
           <Link
