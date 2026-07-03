@@ -174,18 +174,17 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
               href={site.phoneHref}
-              className="group inline-flex items-center justify-center gap-2.5 rounded-xl bg-sky-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-sky-900/40 transition-all hover:-translate-y-0.5 hover:bg-sky-400"
+              className="group inline-flex w-full items-center justify-center gap-2.5 whitespace-nowrap rounded-xl bg-sky-500 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-sky-900/40 transition-all hover:-translate-y-0.5 hover:bg-sky-400 sm:w-auto"
             >
-              <PhoneIcon className="h-5 w-5 transition-transform group-hover:rotate-12" />
-              Call Now
-              <span className="hidden font-bold sm:inline">· {site.phone}</span>
+              <PhoneIcon className="h-5 w-5 shrink-0 transition-transform group-hover:rotate-12" />
+              Call {site.phone}
             </a>
             <a
               href="#quote-form"
-              className="inline-flex items-center justify-center rounded-xl border border-white/30 bg-white/10 px-7 py-4 text-base font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/20"
+              className="inline-flex w-full items-center justify-center whitespace-nowrap rounded-xl border border-white/30 bg-white/10 px-6 py-4 text-base font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:bg-white/20 sm:w-auto"
             >
               Request a Free Quote
             </a>
