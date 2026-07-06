@@ -5,6 +5,8 @@ export type Location = {
   city: string;
   state: "FL";
   zip: string;
+  /** Location-specific hero photo in /public/images/ (.webp). */
+  heroImage: { src: string; width: number; height: number };
   driveTime: string;
   /** 40–70 word featured-snippet answer. */
   quickAnswer: string;
@@ -20,6 +22,11 @@ export const locations: Location[] = [
     city: "Lakewood Ranch",
     state: "FL",
     zip: "34202",
+    heroImage: {
+      src: "/images/leak-detection-in-lakewood-ranch.webp",
+      width: 1600,
+      height: 893,
+    },
     driveTime: "about 20 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Lakewood Ranch, FL locates slab, water line, pool, and irrigation leaks in this fast-growing master-planned community without demolition. Bradenton Leak Scan uses acoustic and thermal equipment to pinpoint leaks in newer slab-on-grade homes and extensive irrigation systems, usually with same-day service across all Lakewood Ranch villages.",
@@ -72,6 +79,11 @@ export const locations: Location[] = [
     city: "Palmetto",
     state: "FL",
     zip: "34221",
+    heroImage: {
+      src: "/images/leak-detection-in-palmetto-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 15 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Palmetto, FL pinpoints slab, water line, and pool leaks across this Manatee River community without tearing up your property. Bradenton Leak Scan uses acoustic listening, thermal imaging, and pressure testing to find hidden leaks in Palmetto's mix of older bungalows and newer waterfront homes, with same-day service available.",
@@ -123,6 +135,11 @@ export const locations: Location[] = [
     city: "Sarasota",
     state: "FL",
     zip: "34236",
+    heroImage: {
+      src: "/images/leak-detection-in-sarasota-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 25 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Sarasota, FL locates slab leaks, underground water line leaks, and pool leaks without demolition. Bradenton Leak Scan brings acoustic correlation, thermal imaging, and pressure testing to Sarasota's mix of historic homes, downtown condos, and waterfront properties, pinpointing hidden leaks to within inches with same-day appointments available.",
@@ -175,6 +192,11 @@ export const locations: Location[] = [
     city: "Bradenton Beach",
     state: "FL",
     zip: "34217",
+    heroImage: {
+      src: "/images/leak-detection-in-bradenton-beach-fl.webp",
+      width: 1600,
+      height: 893,
+    },
     driveTime: "about 30 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Bradenton Beach, FL finds slab, water line, and pool leaks in this Anna Maria Island community where salt air and sandy soil accelerate pipe corrosion. Bradenton Leak Scan uses non-invasive acoustic and pressure testing to pinpoint leaks in beach cottages, rentals, and waterfront homes without demolition.",
@@ -225,6 +247,11 @@ export const locations: Location[] = [
     city: "Anna Maria",
     state: "FL",
     zip: "34216",
+    heroImage: {
+      src: "/images/leak-detection-in-anna-maria-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 35 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Anna Maria, FL pinpoints slab, water line, and pool leaks in this northern Anna Maria Island city where older cottages and coastal corrosion are common. Bradenton Leak Scan uses acoustic listening, thermal imaging, and pressure testing to find hidden leaks non-invasively, protecting island homes and rentals from water damage.",
@@ -275,6 +302,11 @@ export const locations: Location[] = [
     city: "Holmes Beach",
     state: "FL",
     zip: "34217",
+    heroImage: {
+      src: "/images/leak-detection-in-holmes-beach-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 30 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Holmes Beach, FL finds slab, pool, and underground water line leaks in this central Anna Maria Island city. Bradenton Leak Scan uses acoustic and thermal equipment plus pressure testing to pinpoint leaks in canal-front homes, rentals, and pools without demolition, with same-day island service available.",
@@ -325,6 +357,11 @@ export const locations: Location[] = [
     city: "Longboat Key",
     state: "FL",
     zip: "34228",
+    heroImage: {
+      src: "/images/leak-detection-in-longboat-key-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 40 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Longboat Key, FL locates slab, pool, and water line leaks in this upscale barrier-island community without damaging high-end finishes. Bradenton Leak Scan uses non-invasive acoustic, thermal, and pressure testing to pinpoint leaks in luxury homes, condos, and waterfront estates, with discreet same-day service.",
@@ -375,6 +412,11 @@ export const locations: Location[] = [
     city: "Parrish",
     state: "FL",
     zip: "34219",
+    heroImage: {
+      src: "/images/leak-detection-in-parrish-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 25 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Parrish, FL pinpoints slab, irrigation, and pool leaks in this fast-growing community of new master-planned neighborhoods. Bradenton Leak Scan uses acoustic and thermal equipment to find leaks in new slab homes and extensive irrigation systems non-invasively, with same-day service throughout Parrish.",
@@ -426,6 +468,11 @@ export const locations: Location[] = [
     city: "Ellenton",
     state: "FL",
     zip: "34222",
+    heroImage: {
+      src: "/images/leak-detection-in-ellenton-fl.webp",
+      width: 1672,
+      height: 941,
+    },
     driveTime: "about 20 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Ellenton, FL finds slab, water line, and pool leaks across this Manatee River community of established homes and newer developments. Bradenton Leak Scan uses acoustic listening, thermal imaging, and pressure testing to pinpoint hidden leaks non-invasively, with same-day appointments available throughout Ellenton.",
@@ -476,6 +523,11 @@ export const locations: Location[] = [
     city: "Cortez",
     state: "FL",
     zip: "34215",
+    heroImage: {
+      src: "/images/leak-detection-in-cortez-fl.webp",
+      width: 1999,
+      height: 1115,
+    },
     driveTime: "about 25 minutes from our Bradenton office",
     quickAnswer:
       "Leak detection in Cortez, FL pinpoints slab, water line, and pool leaks in this historic fishing village where salt air and older structures are common. Bradenton Leak Scan uses non-invasive acoustic and pressure testing to find hidden leaks in cottages, waterfront homes, and pools without demolition, with same-day service available.",

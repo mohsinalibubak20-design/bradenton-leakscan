@@ -8,7 +8,6 @@ import { CTASection, InlineCTA } from "@/components/CTASection";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { SiteImage } from "@/components/SiteImage";
 import { getLocation, locations } from "@/lib/locations";
 import { site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
@@ -98,7 +97,24 @@ export default async function LocationPage({
                 </Link>
               </div>
             </div>
-            <SiteImage name="locationVan" priority />
+            <figure>
+              <div className="overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-200">
+                <Image
+                  src={loc.heroImage.src}
+                  alt={`Bradenton LeakScan technician providing leak detection in ${loc.city}, ${loc.state}`}
+                  title={`Leak Detection in ${loc.city}, ${loc.state}`}
+                  width={loc.heroImage.width}
+                  height={loc.heroImage.height}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <figcaption className="mt-2 text-center text-xs text-slate-500">
+                Professional non-invasive leak detection service in {loc.city},{" "}
+                {loc.state} by Bradenton LeakScan.
+              </figcaption>
+            </figure>
           </div>
         </Container>
       </section>
