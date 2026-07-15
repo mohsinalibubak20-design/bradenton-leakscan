@@ -8,15 +8,6 @@ const ORG_ID = `${SITE_URL}/#organization`;
 const BUSINESS_ID = `${SITE_URL}/#business`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
-const postalAddress = {
-  "@type": "PostalAddress",
-  streetAddress: site.address.street,
-  addressLocality: site.address.city,
-  addressRegion: site.address.state,
-  postalCode: site.address.zip,
-  addressCountry: "US",
-};
-
 /** Organization schema — corporate identity, reused via @id. */
 export function organizationSchema() {
   return {
@@ -30,7 +21,6 @@ export function organizationSchema() {
     email: site.email,
     telephone: site.phone,
     foundingDate: String(site.foundingYear),
-    address: postalAddress,
     areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
     sameAs: [
       site.social.facebook,
@@ -78,11 +68,9 @@ export function localBusinessSchema() {
     logo: `${SITE_URL}/logo.png`,
     priceRange: "$$",
     parentOrganization: { "@id": ORG_ID },
-    address: postalAddress,
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: site.geo.lat,
-      longitude: site.geo.lng,
+    serviceArea: {
+      "@type": "AdministrativeArea",
+      name: `${site.county}, FL`,
     },
     areaServed: serviceAreas.map((name) => ({ "@type": "City", name })),
     openingHoursSpecification: [

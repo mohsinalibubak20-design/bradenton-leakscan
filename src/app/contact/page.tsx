@@ -38,13 +38,12 @@ export default function ContactPage() {
       <section className="pt-12">
         <Container className="max-w-4xl">
           <QuickAnswer question="How do I reach Bradenton Leak Scan?">
-            Call {site.phone} or email {site.email} for leak detection in{" "}
-            {site.address.city}, {site.address.state}. Our office is at{" "}
-            {site.address.street}, {site.address.city}, {site.address.state}{" "}
-            {site.address.zip}. We answer {site.hours[0].days} {site.hours[0].time}{" "}
-            and {site.hours[1].days} {site.hours[1].time}, with Sunday reserved
-            for emergency calls — and offer fast, same-day quotes for active
-            leaks.
+            Call {site.phone} or email {site.email} for leak detection in
+            Bradenton, FL. Bradenton Leak Scan is a mobile, service-area business
+            serving Bradenton, {site.county}, and nearby Gulf Coast communities.
+            We answer {site.hours[0].days} {site.hours[0].time} and{" "}
+            {site.hours[1].days} {site.hours[1].time}, with Sunday reserved for
+            emergency calls — and offer fast, same-day quotes for active leaks.
           </QuickAnswer>
         </Container>
       </section>
@@ -96,13 +95,12 @@ export default function ContactPage() {
 
               <div className="rounded-2xl border border-slate-200 p-6">
                 <h2 className="text-sm font-semibold uppercase tracking-wider text-slate-500">
-                  Office
+                  Service Area
                 </h2>
-                <address className="mt-3 not-italic text-slate-700">
-                  {site.address.street}
-                  <br />
-                  {site.address.city}, {site.address.state} {site.address.zip}
-                </address>
+                <p className="mt-3 text-slate-700">
+                  Serving Bradenton, {site.county}, and nearby Gulf Coast
+                  communities.
+                </p>
               </div>
 
               <div className="rounded-2xl border border-slate-200 p-6">

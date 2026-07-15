@@ -116,9 +116,8 @@ export function Footer() {
               </a>
             </li>
             <li>
-              {site.address.street}
-              <br />
-              {site.address.city}, {site.address.state} {site.address.zip}
+              Serving Bradenton, {site.county}, and nearby Gulf Coast
+              communities.
             </li>
           </ul>
           <h4 className="mt-5 text-xs font-semibold uppercase tracking-wider text-slate-300">

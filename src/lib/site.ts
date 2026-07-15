@@ -6,15 +6,8 @@ export const site = {
     "Bradenton Leak Scan provides non-invasive leak detection in Bradenton, FL and across Manatee County. We pinpoint slab leaks, water leaks, pool leaks, and underground pipe leaks using acoustic listening, thermal imaging, and pressure testing — no guesswork, no unnecessary digging.",
   phone: "+1 (970) 670-9614",
   phoneHref: "tel:+19706709614",
-  email: "service@bradentonleakscan.com",
-  emailHref: "mailto:service@bradentonleakscan.com",
-  address: {
-    street: "1204 Manatee Ave W",
-    city: "Bradenton",
-    state: "FL",
-    zip: "34205",
-  },
-  geo: { lat: 27.4989, lng: -82.5748 },
+  email: "bradentonleakscan@gmail.com",
+  emailHref: "mailto:bradentonleakscan@gmail.com",
   county: "Manatee County",
   hours: [
     { days: "Mon – Fri", time: "7:00 AM – 7:00 PM" },
