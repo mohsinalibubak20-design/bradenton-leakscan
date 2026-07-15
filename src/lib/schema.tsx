@@ -2,7 +2,7 @@ import { site, services, serviceAreas, faqs, type Faq } from "@/lib/site";
 import { locations } from "@/lib/locations";
 import { landingServices } from "@/lib/landingServices";
 
-export const SITE_URL = "https://www.bradentonleakscan.com";
+export const SITE_URL = "https://bradentonleakscan.com";
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const BUSINESS_ID = `${SITE_URL}/#business`;

@@ -26,12 +26,12 @@ export async function generateMetadata({
   const service = getService(slug);
   if (!service) return { title: "Service Not Found" };
   return {
-    title: `${service.title} in Bradenton, FL`,
+    title: `${service.title} in Bradenton — Cost, Process & Methods`,
     description: service.quickAnswer,
     keywords: [service.keyword, "leak detection Bradenton", "leak detection near me"],
     alternates: { canonical: `/services/${service.slug}` },
     openGraph: {
-      title: `${service.title} in Bradenton, FL | ${site.name}`,
+      title: `${service.title} in Bradenton — Cost, Process & Methods | ${site.name}`,
       description: service.quickAnswer,
     },
   };
@@ -75,7 +75,7 @@ export default async function ServiceDetailPage({
                 </span>
               </div>
               <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-                {service.title} in Bradenton, FL
+                {service.title} in Bradenton &amp; Manatee County
               </h1>
               <p className="mt-4 text-lg leading-relaxed text-slate-600">
                 {service.summary}

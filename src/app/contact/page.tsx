@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { ContactForm } from "@/components/ContactForm";
 import { SocialLinks } from "@/components/SocialLinks";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
 import { site } from "@/lib/site";
 
@@ -31,6 +32,20 @@ export default function ContactPage() {
             Tell us what&apos;s going on and we&apos;ll get you a fast, honest
             quote. For active leaks, call us directly for same-day service.
           </p>
+        </Container>
+      </section>
+
+      <section className="pt-12">
+        <Container className="max-w-4xl">
+          <QuickAnswer question="How do I reach Bradenton Leak Scan?">
+            Call {site.phone} or email {site.email} for leak detection in{" "}
+            {site.address.city}, {site.address.state}. Our office is at{" "}
+            {site.address.street}, {site.address.city}, {site.address.state}{" "}
+            {site.address.zip}. We answer {site.hours[0].days} {site.hours[0].time}{" "}
+            and {site.hours[1].days} {site.hours[1].time}, with Sunday reserved
+            for emergency calls — and offer fast, same-day quotes for active
+            leaks.
+          </QuickAnswer>
         </Container>
       </section>
 

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
 import { CTASection } from "@/components/CTASection";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQAccordion } from "@/components/FAQAccordion";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
-import { site } from "@/lib/site";
+import { serviceAreas, site, type Faq } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -34,6 +36,31 @@ const values = [
   },
 ];
 
+const aboutFaqs: Faq[] = [
+  {
+    q: "What does Bradenton Leak Scan do?",
+    a: "Bradenton Leak Scan is a non-invasive leak detection specialist. Using acoustic listening, thermal imaging, pressure testing, and electronic line tracing, we locate hidden slab, water line, pool, and sewer leaks across Bradenton and Manatee County — usually to within inches — without breaking concrete or trenching your yard.",
+  },
+  {
+    q: "Does Bradenton Leak Scan repair leaks or only find them?",
+    a: "Our specialty is detection — pinpointing exactly where a leak is. We hand you a written report with photos and the precise location that any licensed plumber can use for a targeted repair, and we can refer trusted local repair partners. Finding the leak first keeps the eventual repair small and affordable.",
+  },
+  {
+    q: "What areas does Bradenton Leak Scan serve?",
+    a: `We provide leak detection across Bradenton and all of ${site.county}, including ${serviceAreas
+      .slice(1)
+      .join(", ")}.`,
+  },
+  {
+    q: "How much does leak detection cost in Bradenton?",
+    a: "Most residential leak detection visits in the Bradenton area fall between $250 and $500, depending on the type of leak, property size, and access. We give you an exact, flat quote before any work begins — no hourly surprises.",
+  },
+  {
+    q: "Is Bradenton Leak Scan licensed?",
+    a: `Yes. Bradenton Leak Scan is licensed (${site.license}) and carries liability insurance, and our technicians are trained on the latest detection equipment.`,
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -54,6 +81,19 @@ export default function AboutPage() {
             idea: finding a leak shouldn&apos;t mean destroying your home to look
             for it.
           </p>
+        </Container>
+      </section>
+
+      <section className="pt-12">
+        <Container className="max-w-4xl">
+          <QuickAnswer question="What is Bradenton Leak Scan?">
+            Bradenton Leak Scan is a locally owned, licensed leak detection
+            company serving Bradenton and {site.county}, FL. We specialize in
+            non-invasive detection — using acoustic listening, thermal imaging,
+            and pressure testing to pinpoint slab, water line, pool, and
+            underground leaks to within inches, then hand you a written report so
+            any plumber can make a small, targeted repair.
+          </QuickAnswer>
         </Container>
       </section>
 
@@ -133,6 +173,17 @@ export default function AboutPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-16">
+        <Container className="max-w-3xl">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+            About Us: Common Questions
+          </h2>
+          <div className="mt-10">
+            <FAQAccordion items={aboutFaqs} />
           </div>
         </Container>
       </section>

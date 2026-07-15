@@ -172,36 +172,28 @@ export const services: Service[] = [
       "After we pinpoint and mark the leak, you receive a written report with photos and the exact location. You can hand it to any licensed plumber for a targeted repair, and we're happy to refer trusted local repair partners.",
     faqs: [
       {
-        q: "How do you find a slab leak without breaking the concrete?",
-        a: "We use acoustic ground microphones, thermal imaging, and pressure testing to locate the leak through the slab. Nothing is opened until we've marked the exact spot, so any repair is a small, targeted cut rather than guesswork demolition.",
+        q: "What factors affect the cost of slab leak detection in Bradenton?",
+        a: "Most residential slab leak detection in Bradenton falls between $300 and $500, with the price driven by your home's size, its plumbing layout, and how accessible the lines are. Larger homes or several suspected leaks take longer to isolate. You always get an exact flat quote before any work begins.",
       },
       {
-        q: "How much does slab leak detection cost in Bradenton?",
-        a: "Most residential slab leak detection visits in Bradenton fall between $300 and $500 depending on home size and access. You get an exact flat quote before any work begins, so there are no hourly surprises.",
+        q: "Why locate a slab leak before opening the concrete?",
+        a: "Opening the slab without knowing the exact spot is guesswork that often means jackhammering the wrong area. Locating it first — to within inches — turns the repair into one small, precise opening, which is faster, cheaper, and protects your flooring and foundation.",
       },
       {
-        q: "What are the first signs of a slab leak?",
-        a: "The earliest signs are usually a jump in your water bill, the sound of running water when fixtures are off, and warm or damp spots on the floor. Cracked tile and low water pressure often follow.",
+        q: "Once you pinpoint the slab leak, how is it repaired?",
+        a: "The repair targets that one spot: usually a small opening in the slab for a spot repair, or rerouting or relining the line when the pipe is likely to fail again. We can coordinate the fix with trusted licensed partners — see our slab leak repair page for the details.",
       },
       {
-        q: "Can a slab leak cause foundation damage?",
-        a: "Yes. Water escaping under the slab erodes and softens the soil supporting your foundation, which can lead to settling, cracks, and uneven floors. Early slab leak detection prevents most structural damage.",
+        q: "Will homeowners insurance in Florida cover a slab leak?",
+        a: "Many Florida policies cover accessing the leak and repairing the resulting damage, even when the pipe itself isn't covered. Our written report with photos and the exact location helps document the claim. Check your specific policy, and see our insurance page for what to expect.",
       },
       {
-        q: "Do you also repair the slab leak?",
-        a: "Our specialty is fast, accurate detection. We provide a detailed report you can give to any licensed plumber, and we can refer trusted Bradenton repair partners for the slab leak repair itself.",
+        q: "How accurate is your slab leak location?",
+        a: "We pinpoint the leak to within inches, not just to a room or general area. That precision is the entire point — it keeps the repair to a small, targeted cut instead of exploratory demolition across the floor.",
       },
       {
-        q: "How long does slab leak detection take?",
-        a: "Most slab leak detection appointments take one to two hours. We can often schedule same-day or next-day visits across Bradenton and Manatee County.",
-      },
-      {
-        q: "Will my homeowners insurance cover a slab leak?",
-        a: "Many Florida policies cover the cost of accessing and repairing a slab leak (and resulting damage), even if not the pipe itself. Our written detection report with photos helps support your insurance claim.",
-      },
-      {
-        q: "Is slab leak detection available for emergencies?",
-        a: "Yes. If water is actively flooding or you've shut off your main, call us for emergency leak detection in Bradenton. We prioritize active-leak calls for same-day response.",
+        q: "What do I receive after the slab leak detection visit?",
+        a: "You get the marked leak location plus a written report with photos and the exact spot. Any licensed plumber can use it for a targeted repair, and the documentation supports homeowners insurance and warranty claims.",
       },
     ],
   },
@@ -211,7 +203,7 @@ export const services: Service[] = [
     short:
       "Water leak detection in Bradenton — track down supply and irrigation line leaks underground.",
     icon: "💧",
-    keyword: "water leak detection Bradenton",
+    keyword: "water line leak detection Bradenton",
     image: {
       src: "/images/underground-locator-yard.webp",
       alt: "Underground water line leak detection equipment locating a buried pipe in Bradenton",
@@ -281,36 +273,28 @@ export const services: Service[] = [
       "We mark the exact location and depth of the leak and provide a written report. Your plumber can then make a single targeted excavation and repair, instead of trenching the whole line.",
     faqs: [
       {
-        q: "How do you find an underground water leak without digging?",
-        a: "We use line tracing to map the pipe, then acoustic correlation and ground microphones to pinpoint the leak. Only after we mark the exact spot is a single small hole dug for the repair.",
+        q: "What determines the cost of water line leak detection in Bradenton?",
+        a: "Water line leak detection in Bradenton typically runs $250 to $450, depending on how much buried line we trace and how accessible it is. Checking a single suspected run costs less than mapping an entire irrigation system. You get a flat quote before any work starts.",
       },
       {
-        q: "How much does water leak detection cost in Bradenton?",
-        a: "Underground water leak detection in Bradenton typically runs $250 to $450 depending on line length and access. We provide a flat quote up front before any work starts.",
+        q: "How does acoustic correlation pinpoint a buried leak?",
+        a: "We place two sensors on the pipe and measure the tiny time difference in the leak sound reaching each one, which calculates the leak's exact position between them. Line tracing maps the pipe's path first, and ground microphones confirm the spot — together narrowing the leak to a single dig point.",
       },
       {
-        q: "How do I know if my water line is leaking underground?",
-        a: "Watch for a water meter that spins with everything off, soggy or extra-green patches in the yard, low pressure, and a rising bill. Any of these can signal an underground water line leak.",
+        q: "Can you tell a supply line leak from an irrigation leak?",
+        a: "Yes. We isolate and pressure-test each section — the main between the meter and house versus each irrigation zone — so we know which run is losing water before pinpointing the exact spot. That prevents digging in the wrong place.",
       },
       {
-        q: "Can you find irrigation system leaks too?",
-        a: "Yes. Irrigation leaks are one of our most common calls in Bradenton. We isolate and test each zone, then locate the leak so only the failed section is dug up and repaired.",
+        q: "Once you find the buried leak, what are my repair options?",
+        a: "After we mark the spot and depth, the repair is usually a single small excavation and pipe splice, a fitting or valve replacement, or rerouting a corroded run — far less disruptive than replacing the whole line. We can coordinate it with licensed partners or hand you the report for your own plumber.",
       },
       {
-        q: "Does a meter that moves always mean a leak?",
-        a: "If every fixture, appliance, and irrigation valve is off and the meter still moves, you almost certainly have a leak somewhere on your side of the meter. We can find exactly where.",
+        q: "How deep can you locate an underground leak?",
+        a: "Our line tracing and correlation equipment marks both the position and the depth of the buried pipe. Knowing the depth up front keeps the excavation precise and the repair cost as small as possible.",
       },
       {
-        q: "How long does underground leak detection take?",
-        a: "Most underground water leak detection visits take one to two hours depending on how much line we need to trace. Same-day appointments are often available in Manatee County.",
-      },
-      {
-        q: "Will you damage my lawn or driveway?",
-        a: "No. The whole point of our equipment is to avoid trenching. We locate the leak first so any excavation is a single small spot rather than the entire pipe run.",
-      },
-      {
-        q: "Do you offer emergency water leak detection?",
-        a: "Yes. For active leaks flooding a yard or driveway, call us for emergency leak detection in Bradenton and we'll prioritize a same-day response.",
+        q: "What documentation do I get for a water line leak?",
+        a: "You receive the marked dig location and depth plus a written report with photos. Any licensed plumber can use it for a targeted repair, and the report supports homeowners insurance claims for covered water damage.",
       },
     ],
   },
@@ -390,36 +374,28 @@ export const services: Service[] = [
       "Once we locate the leak, you get a clear report and the least-invasive repair recommendation. We can refer trusted pool repair partners, and many fixes — like a fitting or skimmer seal — are quick and inexpensive once the source is known.",
     faqs: [
       {
-        q: "How do I know if my pool is leaking or just evaporating?",
-        a: "Run a bucket test: float a bucket of pool water on a step and compare the drop inside the bucket to the pool over 24 hours. If the pool drops noticeably more, you have a leak — and we can find it.",
+        q: "What affects the cost of pool leak detection in Bradenton?",
+        a: "Pool leak detection in Bradenton generally runs $300 to $500, depending on the pool's size, its features like a spa or lights, and how complex the plumbing is. A simple shell leak costs less to find than an underground plumbing-line break. You get a flat quote up front.",
       },
       {
-        q: "How much does pool leak detection cost in Bradenton?",
-        a: "Pool leak detection in Bradenton generally runs $300 to $500 depending on pool size, features, and plumbing complexity. You get a flat quote before we begin.",
+        q: "How do you test a pool for a leak without draining it?",
+        a: "Most detection is done with the pool full. We run a bucket test to separate a real leak from evaporation, dye-test suspected cracks and fittings, and pressure-test each plumbing line separately. Draining is rarely needed, and we'll tell you in advance if it is.",
       },
       {
-        q: "How much water loss is normal for a Florida pool?",
-        a: "Normal evaporation is roughly a quarter-inch per day. Losing half an inch or more daily, or needing to add water more than weekly, usually points to a leak.",
+        q: "Can you find a leak in the pool's underground plumbing?",
+        a: "Yes. We isolate and pressurize each suction and return line to locate breaks in the buried plumbing, then mark the exact spot. That's separate from shell and fitting leaks, which we find by dye-testing the skimmer, returns, and light niches.",
       },
       {
-        q: "Where do pool leaks usually happen?",
-        a: "The most common spots are the skimmer, return fittings, light niches, plumbing lines, and cracks in the shell or tile line. We test all of these systematically.",
+        q: "Once you find the pool leak, how is it fixed?",
+        a: "After we locate the source, we recommend the least-invasive repair and can refer trusted pool repair partners. Many fixes — a fitting seal, skimmer repair, or a small plumbing splice — are quick and inexpensive once the exact spot is known.",
       },
       {
-        q: "Can you detect a leak in the pool plumbing lines?",
-        a: "Yes. We isolate and pressure-test each suction and return line to find underground plumbing leaks, then mark the exact spot for repair.",
+        q: "Do air bubbles from the return jets mean my pool is leaking?",
+        a: "Often, yes. Air in the returns usually means the suction side is drawing air through a leak — commonly at the pump, valves, or a buried suction line. We pressure-test the suction side to confirm and locate it.",
       },
       {
-        q: "Will I have to drain my pool for detection?",
-        a: "Usually not. Most pool leak detection is done with the pool full using dye and pressure testing. We'll tell you in advance if any draining is needed.",
-      },
-      {
-        q: "Do air bubbles from the returns mean a leak?",
-        a: "Often, yes. Air in the return jets usually means the suction side is drawing air through a leak, commonly at the pump, valves, or an underground suction line. It's worth testing.",
-      },
-      {
-        q: "How quickly can you come out for pool leak detection?",
-        a: "We offer same-day and next-day pool leak detection across Bradenton and Manatee County, including the island communities of Anna Maria, Holmes Beach, and Longboat Key.",
+        q: "What does a pool leak cost me if I wait?",
+        a: "A leaking Florida pool can waste thousands of gallons of water plus chemicals and heat every season, and the escaping water erodes the ground around the shell, which can crack decking. Finding it early keeps both the loss and the repair small.",
       },
     ],
   },
