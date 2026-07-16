@@ -8,6 +8,7 @@ import { CTASection, InlineCTA } from "@/components/CTASection";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { leadSmartUrl } from "@/components/LeadSmartForm";
 import { getLocation, locations } from "@/lib/locations";
 import { site } from "@/lib/site";
 import { landingServices } from "@/lib/landingServices";
@@ -89,12 +90,12 @@ export default async function LocationPage({
                 >
                   📞 Call {site.phone}
                 </a>
-                <Link
-                  href="/contact"
+                <a
+                  href={leadSmartUrl(3)}
                   className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 hover:border-sky-300 hover:text-sky-700"
                 >
-                  Request a Free Quote
-                </Link>
+                  Get a Free Estimate
+                </a>
               </div>
             </div>
             <figure>
@@ -249,12 +250,12 @@ export default async function LocationPage({
                 >
                   📞 {site.phone}
                 </a>
-                <Link
-                  href="/contact"
+                <a
+                  href={leadSmartUrl(3)}
                   className="mt-3 flex items-center justify-center rounded-lg border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-700 hover:bg-sky-100"
                 >
-                  Request a Quote
-                </Link>
+                  Get a Free Estimate
+                </a>
               </div>
 
               <div className="rounded-2xl border border-slate-200 p-6">

@@ -8,6 +8,7 @@ import { CTASection, InlineCTA } from "@/components/CTASection";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { leadSmartUrl } from "@/components/LeadSmartForm";
 import { images } from "@/lib/images";
 import { getLandingService, landingServices } from "@/lib/landingServices";
 import { getService, site } from "@/lib/site";
@@ -93,12 +94,12 @@ export default async function LandingServicePage({
                 >
                   📞 Call {site.phone}
                 </a>
-                <Link
-                  href="/contact"
+                <a
+                  href={leadSmartUrl(3)}
                   className="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 hover:border-sky-300 hover:text-sky-700"
                 >
-                  Request a Free Quote
-                </Link>
+                  Get a Free Estimate
+                </a>
               </div>
             </div>
             <Image
@@ -248,12 +249,12 @@ export default async function LandingServicePage({
                 >
                   📞 {site.phone}
                 </a>
-                <Link
-                  href="/contact"
+                <a
+                  href={leadSmartUrl(3)}
                   className="mt-3 flex items-center justify-center rounded-lg border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-700 hover:bg-sky-100"
                 >
-                  Request a Quote
-                </Link>
+                  Get a Free Estimate
+                </a>
                 <Link
                   href="/emergency-leak-detection-bradenton-fl"
                   className="mt-3 flex items-center justify-center rounded-lg border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800 hover:bg-amber-100"

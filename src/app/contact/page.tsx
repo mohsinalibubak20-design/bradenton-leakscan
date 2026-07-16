@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/Container";
-import { ContactForm } from "@/components/ContactForm";
+import { LeadSmartForm } from "@/components/LeadSmartForm";
 import { SocialLinks } from "@/components/SocialLinks";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { JsonLd, breadcrumbSchema } from "@/lib/schema";
@@ -50,22 +50,7 @@ export default function ContactPage() {
 
       <section className="py-16">
         <Container className="grid gap-12 lg:grid-cols-5">
-          {/* Form */}
-          <div className="lg:col-span-3">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-              <h2 className="text-xl font-bold text-slate-900">
-                Request a Free Quote
-              </h2>
-              <p className="mt-1 text-sm text-slate-500">
-                * Required fields. We&apos;ll never share your information.
-              </p>
-              <div className="mt-6">
-                <ContactForm />
-              </div>
-            </div>
-          </div>
-
-          {/* Info */}
+          {/* Contact details — left */}
           <div className="lg:col-span-2">
             <div className="space-y-6">
               <div className="rounded-2xl bg-sky-600 p-6 text-white">
@@ -115,6 +100,27 @@ export default function ContactPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Form — right */}
+          <div className="lg:col-span-3">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+              <h2 className="text-xl font-bold text-slate-900">
+                Request a Free Quote
+              </h2>
+              <p className="mt-1 text-sm text-slate-500">
+                Tell us about your leak and we&apos;ll get you a fast,
+                no-obligation quote.
+              </p>
+              <div className="mt-6">
+                <LeadSmartForm
+                  funnel={3}
+                  title="Get a Free Leak Detection Quote"
+                  height={640}
+                  className="ring-1 ring-slate-200"
+                />
               </div>
             </div>
           </div>

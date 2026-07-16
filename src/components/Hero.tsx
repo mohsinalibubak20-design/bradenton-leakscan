@@ -238,7 +238,13 @@ export function Hero() {
                 before we start.
               </p>
             </div>
-            <LeadSmartForm />
+            <LeadSmartForm
+              funnel={4}
+              title="Request a Free Leak Detection Estimate"
+              height={560}
+              priority
+              className="ring-1 ring-slate-200"
+            />
           </div>
         </div>
       </Container>
